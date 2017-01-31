@@ -1,0 +1,40 @@
+doctype
+html
+	include pug-templates/head.pug
+	body
+		#page-wrapper.page-wrapper
+			header.page-header
+				include pug-templates/header.pug
+
+			.page-body
+				include pug-templates/who-we-are.pug
+				section.section-contacts
+					.overlay
+					.container
+						.row
+							.col-md-4
+								.contacts-block
+									.contacts-title Наши контакты
+									.contacts-min-title Телефон:
+									a(href="tel:+380673917520").contacts-link +38 (067) 391-75-20
+									a(href="tel:+380673917520").contacts-link +38 (067) 391-75-20
+									a(href="tel:+380673917520").contacts-link +38 (067) 391-75-20
+									.contacts-min-title Режим работы:
+									.contacts-link Пн. - Пт. с 9.00 - 18.00
+									.contacts-link Сб. - Вс. с 9.00 - 16.00
+									.contacts-min-title Email:
+									a(href="mailto:e-mail@gmail.com").contacts-link e-mail@gmail.com
+							.col-md-offset-1.col-md-7
+								form.contact-form
+									input(type="text",placeholder="Ваше Имя").contact-input
+									input(type="text",placeholder="Email").contact-input
+									input(type="text",placeholder="Ваш телефон").contact-input
+									textarea(placeholder="Сообщение").contact-input.contact-textarea
+									input(type="submit", value="Отправить").contact-submit
+
+			footer.page-footer
+				include pug-templates/footer.pug
+
+
+		//-scripts file
+		include pug-templates/scripts.pug

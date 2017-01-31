@@ -1,0 +1,52 @@
+@import 'stylus-templates/linker'
+@import 'stylus-templates/slick'
+@import 'stylus-templates/header'
+@import 'stylus-templates/body'
+@import 'stylus-templates/footer'
+
+@font-face
+  font-family 'IstokWeb-Bold'
+  src url('fonts/IstokWeb-Bold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/IstokWeb-Bold.woff') format('woff'), url('fonts/IstokWeb-Bold.ttf')  format('truetype')
+  font-weight bold
+  font-style normal
+
+@font-face
+  font-family 'IstokWeb-Regular'
+  src url('fonts/IstokWeb-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/IstokWeb-Regular.woff') format('woff'), url('fonts/IstokWeb-Regular.ttf')  format('truetype')
+  font-weight bold
+  font-style normal
+
+
+
+
+
+
+html
+	font-family 'IstokWeb-Regular'
+	-webkit-font-smoothing antialiased
+
+
+
+#page-wrapper
+	display flex
+
+.page-body
+	flex 1
+
+.clearfix
+	&:after
+		content ""
+		display block
+		clear both
+
+//
+// .container
+// 	margin 0 auto
+// 	width 1200px
+// 	&:before
+// 	&:after
+// 		content " " // 1
+// 		display table // 2
+// 		clear both

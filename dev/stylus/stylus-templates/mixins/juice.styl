@@ -1,0 +1,208 @@
+// --------------------------------------------------------------------
+// Juice v1.0.0
+// --------------------------------------------------------------------
+// --------------------------------------------------------------------
+// Variable settings
+// --------------------------------------------------------------------
+// Base px
+$base-px-default = 16px
+$browser-prefixes = false
+// Strip the units from a value
+// ----------------------------
+strip-units($value)
+  $value / ($value * 0 + 1)
+// Calculate rems from a px value
+// ------------------------------
+rem-calc($px, $base-val = $base-px-default)
+  if not unitless($px)
+    $px = strip-units($px)
+  if not unitless($base-val)
+    $base-val = strip-units($base-val)
+  $px / $base-val * 1rem
+// Calculate ems from a px value
+// ------------------------------
+em-calc($px, $base-val = $base-px-default)
+  if not unitless($px)
+    $px = strip-units($px)
+  if not unitless($base-val)
+    $base-val = strip-units($base-val)
+  $px / $base-val * 1em
+// --------------------------------------------------------------------
+// Mixins
+// --------------------------------------------------------------------
+// Single side border radius
+// -------------------------
+border-top-radius($radius = $border-radius-default)
+  border-top-right-radius: $radius
+  border-top-left-radius: $radius
+border-right-radius($radius = $border-radius-default)
+  border-top-right-radius: $radius
+  border-bottom-right-radius: $radius
+border-bottom-radius($radius = $border-radius-default)
+  border-bottom-right-radius: $radius
+  border-bottom-left-radius: $radius
+border-left-radius($radius = $border-radius-default)
+  border-top-left-radius: $radius
+  border-bottom-left-radius: $radius
+// Transforms
+// ----------
+transform-single($property, $value)
+  if $browser-prefixes
+    juice-prefixer(transform, #{$property}unquote("(")#{$value}unquote(")"), webkit moz ms o spec)
+  else
+    transform: {$property}unquote("("){$value}unquote(")")
+rotate($deg)
+  transform-single(rotate, $deg)
+rotateX($deg)
+  transform-single(rotateX, $deg)
+rotateY($deg)
+  transform-single(rotateY, $deg)
+rotateZ($deg)
+  transform-single(rotateZ, $deg)
+rotate3d($x, $y, $z, $deg)
+  $multi-var = $x, $y, $z, $deg
+  transform-single(rotate3d, $multi-var)
+scale($ratio)
+  transform-single(scale, $ratio)
+scaleX($ratio)
+  transform-single(scaleX, $ratio)
+scaleY($ratio)
+  transform-single(scaleY, $ratio)
+scaleZ($ratio)
+  transform-single(scaleZ, $ratio)
+scale3d($x, $y, $z)
+  $multi-var = $x, $y, $z
+  transform-single(scale3d, $multi-var)
+skew($x, $y)
+  $multi-var = $x, $y
+  transform-single(skew, $multi-var)
+  backface-visibility: hidden
+skewX($deg)
+  transform-single(skewX, $deg)
+  backface-visibility: hidden
+skewY($deg)
+  transform-single(skewY, $deg)
+  backface-visibility: hidden
+translate($x, $y)
+  $multi-var = $x, $y
+  transform-single(translate, $multi-var)
+translateX($x)
+  transform-single(translateX, $x)
+translateY($y)
+  transform-single(translateY, $y)
+translateZ($z)
+  transform-single(translateZ, $z)
+translate3d($x, $y, $z)
+  $multi-var = $x, $y, $z
+  transform-single(translate3d, $multi-var)
+// Emboss effect
+// -------------
+box-emboss($opacity = 0.5, $opacity2 = 0.5)
+  if $browser-prefixes
+    juice-prefixer(box-shadow, "rgba(white,#{$opacity}) 0 1px 0, inset rgba(black,#{$opacity2}) 0 1px 0", webkit spec)
+  else
+    box-shadow: rgba(white, $opacity) 0 1px 0, inset rgba(black, $opacity2) 0 1px 0
+// Letterpress effect
+// ------------------
+letterpress($opacity = 0.5)
+  text-shadow: rgba(white, $opacity) 0 1px 0
+// Placeholder text
+// ----------------
+placeholder-color($color = $placeholder-color-default)
+  if $browser-prefixes
+    &::-webkit-input-placeholder
+      color: $color
+    &::-moz-placeholder
+      color: $color
+    &::-ms-input-placeholder
+      color: $color
+    &::placeholder
+      color: $color
+  else
+    &::placeholder
+      color: $color
+// Normal & hover state
+// --------------------
+hoverer($property, $normal, $hovered)
+  {$property}: $normal
+  &:hover
+    {$property}: $hovered
+// Create a circle, with an optional border
+// ----------------------------------------
+circle($size = $circle-size-default, $color = $circle-color-default, $border-width = $circle-border-width-default, $border-color = $circle-border-color-default, $display = $circle-display-default)
+  display: $display
+  border-radius: 50%
+  if $border-width
+    size($size)
+    background-color: $color
+    border: $border-width solid $border-color
+  else
+    if $color == inherit
+      size(0)
+      border-width: ($size / 2)
+      border-style: solid
+    else
+      size($size)
+      background-color: $color
+// Create a psuedo element square, with an optional border
+// -------------------------------------------------------
+square($size = $square-size-default, $color = $square-color-default, $border-width = $square-border-width-default, $border-color = $square-border-color-default, $element = $square-element-default)
+  &:{$element}
+    content: ''
+    position: absolute
+    size($size)
+    background: $color
+    if $border-width
+      border: $border-width solid $border-color
+// --------------------------------------------------------------------
+// Helper Mixins
+// --------------------------------------------------------------------
+// Clearfix
+// --------
+clearfix()
+  *zoom: 1
+  &:before,
+	&:after
+    display: table
+    content: ''
+    line-height: 0
+  &:after
+    clear: both
+// Hide text
+// ---------
+hide-text()
+  font: 0/0 a
+  color: transparent
+  text-shadow: none
+// Center an element vertically and horizontally
+// ---------------------------------------------
+centerer()
+  absolute(50%, null, null, 50%)
+  if $browser-prefixes
+    juice-prefixer(transform, translate(-50%, -50%), webkit moz ms o spec)
+  else
+    transform: translate(-50%, -50%)
+// Center an element vertically
+// ----------------------------
+vert-centerer()
+  relative(50%)
+  if $browser-prefixes
+    juice-prefixer(transform, translateY(-50%), webkit moz ms o spec)
+  else
+    transform: translateY(-50%)
+// Cover everything
+// ----------------
+coverer()
+  absolute(0, null, null, 0)
+  size(100%)
+// Center a block level element
+// ----------------------------
+center-block()
+  display: block
+  margin-left: auto
+  margin-right: auto
+// Clean an element
+// ----------------
+clean()
+  margin: 0
+  padding: 0

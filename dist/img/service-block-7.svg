@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="68" viewBox="0 0 70 68">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #0059a9;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="683" y="1164" width="70" height="68" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="3.995" dy="-0.209" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1.732"/>
+      <feFlood result="flood" flood-opacity="0.15"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M711.451,1222.9h8.13v2.03h-8.13v-2.03Zm-4.064-42.68h14.226v2.04H707.387v-2.04Zm0,4.07h14.226v2.03H707.387v-2.03Zm0,4.06h14.226v2.04H707.387v-2.04Zm-20.323,2.04h18.291v-10.17H687.064v10.17Zm2.033-8.13h14.226v6.09H689.1v-6.09Zm48.774,16.26v-27.44a5.087,5.087,0,0,0-5.081-5.08H698.242a5.087,5.087,0,0,0-5.081,5.08v5.08H683v18.29h10.161v29.47a5.087,5.087,0,0,0,5.081,5.08H732.79a5.087,5.087,0,0,0,5.081-5.08v-7.11H746v-18.29h-8.129Zm-42.678-27.44a3.054,3.054,0,0,1,3.049-3.05H732.79a3.054,3.054,0,0,1,3.049,3.05v1.02H695.193v-1.02Zm-10.161,21.34v-14.23h38.613v14.23H685.032Zm50.807,31.5a3.054,3.054,0,0,1-3.049,3.05H698.242a3.054,3.054,0,0,1-3.049-3.05v-3.05h40.646v3.05Zm0-5.08H695.193v-24.39h30.484v-18.29H695.193v-2.03h40.646v24.39H703.323v18.29h32.516v2.03Zm8.129-4.07H705.355v-14.22h38.613v14.22Zm-16.258-12.19h14.225v2.03H727.71v-2.03Zm0,4.06h14.225v2.04H727.71v-2.04Zm0,4.07h14.225v2.03H727.71v-2.03Zm-2.033-8.13h-18.29v10.16h18.29v-10.16Zm-2.032,8.13H709.419v-6.1h14.226v6.1Z" transform="translate(-683 -1164)"/>
+</svg>
