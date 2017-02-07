@@ -56,8 +56,11 @@ section.section-why-us
     .row
       h2.h2-title Почему мы
       p.main-desc.why-us-desc Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по формированию позиции играет важную роль в формировании модели развития.
-      .col-md-6
-      .col-md-6
+      .col-lg-6.col-md-12
+        .video
+          .youtube-player(data-id='VIDEO_ID')
+        //- .start-video
+      .col-lg-6.col-md-12
         ul.why-us-list
           li.why-us-list-item Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке системы обучения кадров.
           li.why-us-list-item Позиции позволяет выполнять важные задания по разработке системы обучения кадров.
@@ -108,37 +111,41 @@ section.section-blog
     .row
       h2.h2-title.blog-title Новое из блога
       .blog-news-wrapper.clearfix
-        .col-md-3
+        .col-md-3.col-xs-12
           .blog-img-wrapper
-            img(src="img/blog-img-1.jpg", alt="")
-          a(href="javascript:void(0)").news-blog-title Короткий эксперимент по раскрутке группы «Вконтакте»
+            .filter
+              img(src="img/blog-img-1.jpg", alt="")
+            a(href="javascript:void(0)").news-blog-title Короткий эксперимент по раскрутке группы «Вконтакте»
           .blog-date 16 Декабря 2016
           a(href="javascript:void(0)").blog-author Иван Иванов
           .social
             a(href="javascript:void(0)").social-like 68
             a(href="javascript:void(0)").social-comments 4
-        .col-md-3
+        .col-md-3.col-xs-12
           .blog-img-wrapper
-            img(src="img/blog-img-2.jpg", alt="")
-          a(href="javascript:void(0)").news-blog-title Короткий эксперимент по раскрутке группы «Вконтакте»
+            .filter
+              img(src="img/blog-img-2.jpg", alt="")
+            a(href="javascript:void(0)").news-blog-title Короткий эксперимент по раскрутке группы «Вконтакте»
           .blog-date 16 Декабря 2016
           a(href="javascript:void(0)").blog-author Иван Иванов
           .social
             a(href="javascript:void(0)").social-like 68
             a(href="javascript:void(0)").social-comments 4
-        .col-md-3
+        .col-md-3.col-xs-12
           .blog-img-wrapper
-            img(src="img/blog-img-3.jpg", alt="")
-          a(href="javascript:void(0)").news-blog-title Короткий эксперимент по раскрутке группы «Вконтакте»
+            .filter
+              img(src="img/blog-img-3.jpg", alt="")
+            a(href="javascript:void(0)").news-blog-title Короткий эксперимент по раскрутке группы «Вконтакте»
           .blog-date 16 Декабря 2016
           a(href="javascript:void(0)").blog-author Иван Иванов
           .social
             a(href="javascript:void(0)").social-like 68
             a(href="javascript:void(0)").social-comments 4
-        .col-md-3
+        .col-md-3.col-xs-12
           .blog-img-wrapper
-            img(src="img/blog-img-4.jpg", alt="")
-          a(href="javascript:void(0)").news-blog-title Короткий эксперимент по раскрутке группы «Вконтакте»
+            .filter
+              img(src="img/blog-img-4.jpg", alt="")
+            a(href="javascript:void(0)").news-blog-title Короткий эксперимент по раскрутке группы «Вконтакте»
           .blog-date 16 Декабря 2016
           a(href="javascript:void(0)").blog-author Иван Иванов
           .social
@@ -156,13 +163,13 @@ section.section-seo
       h2.h2-title.services-title.seo-title Карьера в Ванмаркетинг
       p.main-desc.seo-desc Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же начало повседневной работы по формированию позиции играет важную роль в формировании модели развития.
     .row
-      .btn-main-wrapper.seo-btn
-        a.btn.btn--main(href="javascript:void(0)") Связаться с нами
+      .btn-main-wrapper.seo-btn-wrapper
+        a.btn.btn--main.seo-btn(href="javascript:void(0)") Связаться с нами
 section.section-contacts
   .overlay
   .container
     .row
-      .col-md-4
+      .col-md-4.col-xs-12
         .contacts-block
           .contacts-title Наши контакты
           .contacts-min-title Телефон:
@@ -174,11 +181,10 @@ section.section-contacts
           .contacts-link Сб. - Вс. с 9.00 - 16.00
           .contacts-min-title Email:
           a(href="mailto:e-mail@gmail.com").contacts-link e-mail@gmail.com
-      .col-md-offset-1.col-md-7
+      .col-md-offset-1.col-md-7.col-xs-12
         form.contact-form
-          input(type="text",placeholder="Ваше Имя").contact-input 
+          input(type="text",placeholder="Ваше Имя").contact-input
           input(type="text",placeholder="Email").contact-input
           input(type="text",placeholder="Ваш телефон").contact-input
           textarea(placeholder="Сообщение").contact-input.contact-textarea
           input(type="submit", value="Отправить").contact-submit
-          

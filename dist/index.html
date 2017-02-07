@@ -3,6 +3,7 @@
     <head>
         <title>Sample Page</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/ie-detector.js"></script>
         <script src="js/modernizr.js"></script>
@@ -41,18 +42,48 @@
                 <section class="section-header">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-2">
-                                <div class="logo">
+                            <div class="col-lg-2 col-md-2">
+                                <a class="logo" href="javascript:void(0)">
                                     <img src="img/logo.png" alt="">
-                                </div>
+                                </a>
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-lg-7 col-md-3 main-outer">
+                                <div class="hidden-menu">Меню</div>
                                 <ul class="main-menu">
                                     <li>
                                         <a class="main-menu--item" href="javascript:void(0)">Кто мы</a>
                                     </li>
-                                    <li>
+                                    <li class="js-item-outer">
                                         <a class="main-menu--item" href="javascript:void(0)">Услуги</a>
+                                        <ul class="inner-header-menu js-inner-content">
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Комплексное продвижение в интернете</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Поисковой маркетинг (SEO-продвижение сайтов)</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Продвижение в соцсетях (Социальный маркетинг)</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Создание сайтов</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Консалтинг и аудит</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Медийная реклама</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">E-mail маркетинг</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Аналитика</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Контекстная реклама</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
                                         <a class="main-menu--item" href="javascript:void(0)">Достижения</a>
@@ -71,7 +102,8 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-lg-2 col-md-5">
+                                <div class="social-hidden-title">Мы в соцсетях</div>
                                 <ul class="social-menu">
                                     <li>
                                         <a class="social-menu--item" href="javascript:void(0)">
@@ -117,12 +149,19 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-md-1">
+                            <div class="col-lg-1 col-md-2 col-xs-4 btn-xs-abs">
                                 <a class="header-search-btn" href="javascript:void(0)">
                                     <svg class="svg svg--search">
                                         <use xlink:href="#svg--search"></use>
                                     </svg>
                                 </a>
+                                <div class="search-block">
+                                    <input class="main-search" type="text" placeholder="Поиск...">
+                                    <input class="main-search--submit" type="submit" value="Найти">
+                                    <svg class="svg svg--search search-block-svg">
+                                        <use xlink:href="#svg--search"></use>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -207,8 +246,12 @@
                             <h2 class="h2-title">Почему мы</h2>
                             <p class="main-desc why-us-desc">Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности
                                 же начало повседневной работы по формированию позиции играет важную роль в формировании модели развития.</p>
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="video">
+                                    <div class="youtube-player" data-id="VIDEO_ID"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
                                 <ul class="why-us-list">
                                     <li class="why-us-list-item">Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке системы обучения кадров.</li>
                                     <li class="why-us-list-item">Позиции позволяет выполнять важные задания по разработке системы обучения кадров.</li>
@@ -288,11 +331,13 @@
                         <div class="row">
                             <h2 class="h2-title blog-title">Новое из блога</h2>
                             <div class="blog-news-wrapper clearfix">
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-12">
                                     <div class="blog-img-wrapper">
-                                        <img src="img/blog-img-1.jpg" alt="">
+                                        <div class="filter">
+                                            <img src="img/blog-img-1.jpg" alt="">
+                                        </div>
+                                        <a class="news-blog-title" href="javascript:void(0)">Короткий эксперимент по раскрутке группы «Вконтакте»</a>
                                     </div>
-                                    <a class="news-blog-title" href="javascript:void(0)">Короткий эксперимент по раскрутке группы «Вконтакте»</a>
                                     <div class="blog-date">16 Декабря 2016</div>
                                     <a class="blog-author" href="javascript:void(0)">Иван Иванов</a>
                                     <div class="social">
@@ -300,11 +345,13 @@
                                         <a class="social-comments" href="javascript:void(0)">4</a>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-12">
                                     <div class="blog-img-wrapper">
-                                        <img src="img/blog-img-2.jpg" alt="">
+                                        <div class="filter">
+                                            <img src="img/blog-img-2.jpg" alt="">
+                                        </div>
+                                        <a class="news-blog-title" href="javascript:void(0)">Короткий эксперимент по раскрутке группы «Вконтакте»</a>
                                     </div>
-                                    <a class="news-blog-title" href="javascript:void(0)">Короткий эксперимент по раскрутке группы «Вконтакте»</a>
                                     <div class="blog-date">16 Декабря 2016</div>
                                     <a class="blog-author" href="javascript:void(0)">Иван Иванов</a>
                                     <div class="social">
@@ -312,11 +359,13 @@
                                         <a class="social-comments" href="javascript:void(0)">4</a>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-12">
                                     <div class="blog-img-wrapper">
-                                        <img src="img/blog-img-3.jpg" alt="">
+                                        <div class="filter">
+                                            <img src="img/blog-img-3.jpg" alt="">
+                                        </div>
+                                        <a class="news-blog-title" href="javascript:void(0)">Короткий эксперимент по раскрутке группы «Вконтакте»</a>
                                     </div>
-                                    <a class="news-blog-title" href="javascript:void(0)">Короткий эксперимент по раскрутке группы «Вконтакте»</a>
                                     <div class="blog-date">16 Декабря 2016</div>
                                     <a class="blog-author" href="javascript:void(0)">Иван Иванов</a>
                                     <div class="social">
@@ -324,11 +373,13 @@
                                         <a class="social-comments" href="javascript:void(0)">4</a>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-xs-12">
                                     <div class="blog-img-wrapper">
-                                        <img src="img/blog-img-4.jpg" alt="">
+                                        <div class="filter">
+                                            <img src="img/blog-img-4.jpg" alt="">
+                                        </div>
+                                        <a class="news-blog-title" href="javascript:void(0)">Короткий эксперимент по раскрутке группы «Вконтакте»</a>
                                     </div>
-                                    <a class="news-blog-title" href="javascript:void(0)">Короткий эксперимент по раскрутке группы «Вконтакте»</a>
                                     <div class="blog-date">16 Декабря 2016</div>
                                     <a class="blog-author" href="javascript:void(0)">Иван Иванов</a>
                                     <div class="social">
@@ -360,8 +411,8 @@
                                 же начало повседневной работы по формированию позиции играет важную роль в формировании модели развития.</p>
                         </div>
                         <div class="row">
-                            <div class="btn-main-wrapper seo-btn">
-                                <a class="btn btn--main" href="javascript:void(0)">Связаться с нами</a>
+                            <div class="btn-main-wrapper seo-btn-wrapper">
+                                <a class="btn btn--main seo-btn" href="javascript:void(0)">Связаться с нами</a>
                             </div>
                         </div>
                     </div>
@@ -370,7 +421,7 @@
                     <div class="overlay"></div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-12">
                                 <div class="contacts-block">
                                     <div class="contacts-title">Наши контакты</div>
                                     <div class="contacts-min-title">Телефон:</div>
@@ -384,7 +435,7 @@
                                     <a class="contacts-link" href="mailto:e-mail@gmail.com">e-mail@gmail.com</a>
                                 </div>
                             </div>
-                            <div class="col-md-offset-1 col-md-7">
+                            <div class="col-md-offset-1 col-md-7 col-xs-12">
                                 <form class="contact-form">
                                     <input class="contact-input" type="text" placeholder="Ваше Имя">
                                     <input class="contact-input" type="text" placeholder="Email">
@@ -401,8 +452,8 @@
                 <section class="section-footer">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4 footer-copyright">© 2017 Ван маркетинг - Создание и продвижение сайтов</div>
-                            <div class="col-md-offset-2 col-md-6">
+                            <div class="col-lg-4 col-md-12 footer-copyright col-xs-12">© 2017 Ван маркетинг - Создание и продвижение сайтов</div>
+                            <div class="col-md-offset-2 col-lg-6 md-hidden">
                                 <ul class="main-menu footer-menu">
                                     <li>
                                         <a class="main-menu--item" href="javascript:void(0)">Кто мы</a>
@@ -433,6 +484,7 @@
             </footer>
         </div>
         <script src="js/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
         <script src="js/slick.min.js"></script>
         <script src="js/common.js"></script>
         <script src="js/all.js"></script>

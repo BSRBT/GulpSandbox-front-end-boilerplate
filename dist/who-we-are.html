@@ -3,6 +3,7 @@
     <head>
         <title>Sample Page</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/ie-detector.js"></script>
         <script src="js/modernizr.js"></script>
@@ -41,18 +42,48 @@
                 <section class="section-header">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-2">
-                                <div class="logo">
+                            <div class="col-lg-2 col-md-2">
+                                <a class="logo" href="javascript:void(0)">
                                     <img src="img/logo.png" alt="">
-                                </div>
+                                </a>
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-lg-7 col-md-3 main-outer">
+                                <div class="hidden-menu">Меню</div>
                                 <ul class="main-menu">
                                     <li>
                                         <a class="main-menu--item" href="javascript:void(0)">Кто мы</a>
                                     </li>
-                                    <li>
+                                    <li class="js-item-outer">
                                         <a class="main-menu--item" href="javascript:void(0)">Услуги</a>
+                                        <ul class="inner-header-menu js-inner-content">
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Комплексное продвижение в интернете</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Поисковой маркетинг (SEO-продвижение сайтов)</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Продвижение в соцсетях (Социальный маркетинг)</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Создание сайтов</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Консалтинг и аудит</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Медийная реклама</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">E-mail маркетинг</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Аналитика</a>
+                                            </li>
+                                            <li>
+                                                <a class="inner-header-menu--item" href="javascript:void(0)">Контекстная реклама</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
                                         <a class="main-menu--item" href="javascript:void(0)">Достижения</a>
@@ -71,7 +102,8 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-lg-2 col-md-5">
+                                <div class="social-hidden-title">Мы в соцсетях</div>
                                 <ul class="social-menu">
                                     <li>
                                         <a class="social-menu--item" href="javascript:void(0)">
@@ -117,12 +149,19 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-md-1">
+                            <div class="col-lg-1 col-md-2 col-xs-4 btn-xs-abs">
                                 <a class="header-search-btn" href="javascript:void(0)">
                                     <svg class="svg svg--search">
                                         <use xlink:href="#svg--search"></use>
                                     </svg>
                                 </a>
+                                <div class="search-block">
+                                    <input class="main-search" type="text" placeholder="Поиск...">
+                                    <input class="main-search--submit" type="submit" value="Найти">
+                                    <svg class="svg svg--search search-block-svg">
+                                        <use xlink:href="#svg--search"></use>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -132,7 +171,7 @@
                 <section class="section-post-inner">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-lg-3 col-md-4">
                                 <div class="services-inner-list">
                                     <div class="sevices-inner-title">Услуги</div>
                                     <ul>
@@ -199,7 +238,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-8 col-lg-9">
                                 <div class="breadcrumbs b-zero">
                                     <a class="b-link" href="javascript:void(0)">Главная</a>
                                     <a class="b-link" href="javascript:void(0)">Главная123123</a>
@@ -265,8 +304,8 @@
                 <section class="section-footer">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4 footer-copyright">© 2017 Ван маркетинг - Создание и продвижение сайтов</div>
-                            <div class="col-md-offset-2 col-md-6">
+                            <div class="col-lg-4 col-md-12 footer-copyright col-xs-12">© 2017 Ван маркетинг - Создание и продвижение сайтов</div>
+                            <div class="col-md-offset-2 col-lg-6 md-hidden">
                                 <ul class="main-menu footer-menu">
                                     <li>
                                         <a class="main-menu--item" href="javascript:void(0)">Кто мы</a>
@@ -297,6 +336,7 @@
             </footer>
         </div>
         <script src="js/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
         <script src="js/slick.min.js"></script>
         <script src="js/common.js"></script>
         <script src="js/all.js"></script>

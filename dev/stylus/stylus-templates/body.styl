@@ -1,5 +1,5 @@
 _main-btn = #36a6ff
-
+_hover-color = #fdb721
 
 .section-main
   text-align center
@@ -34,19 +34,29 @@ _main-btn = #36a6ff
   text-align center
   text-decoration none
   vertical-align middle
+  border 2px solid transparent
+  transition .4s
 
 .btn--main
   width 280px
   height 60px
   line-height 60px
-  background _main-btn
+  background-color _main-btn
+  &:hover
+    border 2px solid transparent
+    transition .4s
+    background-color alpha(#000,70%)
+    color _main-btn
+    border-color _main-btn
+
+.seo-btn:hover
+  background-color transparent
 
 
 .section-services
   background-image url('../img/services-bg.jpg')
   padding 60px 0
   position relative
-
 
 .h2-title
   text-align center
@@ -137,7 +147,37 @@ _main-btn = #36a6ff
   width 509px
   height 218px
   background-color alpha(#000, 60%)
-
+  transition .4s
+  &:hover
+    background-color #000
+    transition .4s
+  &:before
+    content ''
+    position absolute
+    bottom 0
+    left 0
+    width 115px
+    height 65px
+    border-left 1px solid #fff
+    border-bottom 1px solid #fff
+    transition .6s
+  &:after
+    content ''
+    position absolute
+    top 0
+    right 0
+    width 115px
+    height 65px
+    border-right 1px solid #fff
+    border-top 1px solid #fff
+    transition .6s
+  &:hover:before
+  &:hover:after
+    content ''
+    width 60px
+    height 100%
+    border-color _main-btn
+    transition .6s
 
 .work-block-title
   font-size 25px
@@ -156,6 +196,7 @@ _main-btn = #36a6ff
   width 125px
   text-align right
   margin-top 50px
+  transition .4s
   &:before
     content ''
     display inline-block
@@ -164,6 +205,13 @@ _main-btn = #36a6ff
     height 15px
     vertical-align top
     margin-right 18px
+    transition .4s
+  &:hover
+    color _main-btn
+    &:before
+      margin-right 10px
+      transition .4s
+      background-image url('../img/link-arrow-active.png')
 
 
 .our-work-title-second
@@ -201,13 +249,37 @@ _main-btn = #36a6ff
 .blog-news-wrapper
   padding-top 60px
 
+.blog-img-wrapper:hover
+  .filter:before
+    background-color alpha(#000, 45%)
+  .news-blog-title
+    color _main-btn
+    transition .4s
+
+.filter
+  position relative
+  &:before
+    content ''
+    position absolute
+    top 0
+    left 0
+    width 103%
+    height 98%
+    z-index 1
+    background-color transparent
+    transition .4s
+
+
 .news-blog-title
   display block
   margin-top 5px
   color #fff
   font-size 16px
   line-height 25px
-
+  transition .4s
+  &:hover
+    color _main-btn
+    transition .4s
 .blog-date
   margin-top 12px
   color #fff
@@ -268,7 +340,7 @@ _main-btn = #36a6ff
   text-align center
   padding-top 35px
 
-.seo-btn
+.seo-btn-wrapper
   padding-top 38px
 
 .section-contacts
@@ -318,7 +390,12 @@ _main-btn = #36a6ff
   padding-left 15px
   font-size 16px
   font-family 'IstokWeb-Bold'
+  transition .4s
   color #fff
+  cursor pointer
+  &:hover
+    border-bottom-color _hover-color
+    transition .4s
   &:focus
     outline none
   &:not(:first-child)
@@ -339,7 +416,13 @@ _main-btn = #36a6ff
   width 170px
   height 46px
   padding 0
-  border none
+  border 2px solid transparent
+  transition .4s
+  cursor pointer
+  &:hover
+    border-color #fff
+    background-color alpha(#000, 70%)
+    transition .4s
   &:focus
     outline none
 
@@ -663,3 +746,437 @@ _main-btn = #36a6ff
 
 .about-img
   padding-top 20px
+
+@media (max-width:1200px)
+  .section-main
+    background-size cover
+    height 335px
+  .main-title
+    font-size 32px
+    padding-top 15px
+    line-height 40px
+  .main-desc
+    font-size 14px
+    padding-top 20px
+    line-height 20px
+  .why-us-list
+    margin-top 55px
+  .btn-main-wrapper
+    padding-top 20px
+  .btn--main
+    width 240px
+    height 50px
+    line-height 50px
+    font-size 16px
+  .h2-title
+    font-size 32px
+  .services-block
+    width 180px
+    margin-left 10px
+    margin-right 10px
+    &:nth-child(6n)
+      clear none
+    &:nth-child(5n)
+      clear both
+    &:last-child
+      clear none
+  .clearfix
+    clear none
+  .section-services
+    background-size contain
+  .why-us-list-item:before
+    padding-bottom 50px
+    background-repeat no-repeat
+  .why-us-list-item
+    font-size 18px
+  .section-why-us
+    background-image url('../img/why-us-bg-md.jpg')
+    background-size cover
+    background-position-x -180px
+  .work-block
+    overflow hidden
+  .inner-hover
+    width 294px
+  .work-block-title
+    font-size 20px
+    padding 50px 20px 0
+  .work-block-link
+    margin-top 20px
+  .animation img
+    width 100%
+  .filter img
+    width 100%
+  .section-blog
+    height 510px
+    padding-top 20px
+  .news-blog-title
+    font-size 14px
+  .section-seo
+    background-size cover
+  .footer-menu
+    display none
+  .contacts-title
+    font-size 29px
+  .overlay
+    width 375px
+  .main-menu > li
+    display block
+    padding 0
+    margin 11px 5px
+  .hidden-menu
+    display block
+    opacity 1
+    visibility visible
+  .main-menu
+    width 230px
+    padding-left 15px
+    background-color #000
+    position absolute
+    z-index 1
+    opacity 0
+    visibility hidden
+    transition .4s
+    &.active
+      visibility visible
+      opacity 1
+      transition .4s
+  .main-menu > li:hover > .inner-header-menu
+    padding 10px 0 5px 20px
+    transition none
+  .inner-header-menu
+    opacity 1
+    background-color #202020
+    position relative
+    visibility visible
+    transform none
+    left -20px
+    width 230px
+    font-size 16px
+    margin-top 10px
+    padding 10px 0 5px 20px
+  .inner-header-menu--item
+    font-family 'IstokWeb-Regular'
+    font-size 16px
+  .js-item-outer
+    position relative
+    &.active
+      .main-menu--item
+        color _hover-color
+        &:after
+          background-image url('../img/hidden-menu-arr-a.png')
+          transform rotate(180deg)
+          transition .4s
+    .main-menu--item
+      &:after
+        content ''
+        display inline-block
+        width 10px
+        height 6px
+        position absolute
+        right 10px
+        top 5px
+        transform  rotate(0)
+        transform-origin center
+        background-image url('../img/hidden-menu-arr.png')
+        transition .4s
+  .social-menu
+    text-align right
+  .social-menu li
+    padding 24px 7px 0 3px
+  .search-block
+    width 615px
+  .main-search
+    width 600px
+  /////////
+  .other-post-promo
+    overflow hidden
+    max-height 127px
+  .promo-img
+    width 47%
+  .promo-text
+    width 48%
+    padding-top 5px
+  .promo-lead
+    line-height 23px
+  .section-post-inner
+    background-image none
+  ////////////
+  .about-img
+    width 100%
+  .sevices-inner-link
+    width 165px
+  /////////
+  .left-img
+    width 60%
+    img
+      width 100%
+  .right-img
+    width 60%
+    img
+      width 100%
+
+
+
+@media (max-width:320px)
+  .section-header
+    height 115px
+    position relative
+  .main-outer
+    width 150px
+    position absolute
+  .hidden-menu
+    padding-left 2px
+    padding-top 26px
+  .btn-xs-abs
+    position absolute
+    top 5px
+    right 0
+  .header-search-btn
+    height 50px
+    line-height 58px
+  .search-block
+    width 275px
+  .main-search
+    width 270px
+  .section-main
+    display none
+  .section-services
+    background-image none
+    padding 30px 0
+  .services-block
+    width 300px
+    margin-left 25px
+    text-align left
+  .services-block img
+    margin-bottom 70px
+    float left
+    margin-right 7px
+    width 80px
+  .service-title
+    padding-top 0
+  .main-desc
+    padding 35px 20px
+    font-size 16px
+  .why-us-list-item:before
+    padding-bottom 80px
+  .why-us-list-item:not(:first-child)
+    margin-top 35px
+  .section-why-us
+    background-position-x 400px
+  .inner-hover
+    width 216px
+  .work-block-title
+    font-size 14px
+    line-height 20px
+    padding 5px 20px 0
+    height 52px
+  .work-block
+    height 145px
+  .inner-hover
+    top 30px
+    left 20px
+    height 100px
+    width 232px
+  .section-our-work
+    background-image none
+    padding-bottom 30px
+  .our-work-list-item
+    margin-top 50px
+  .animation
+    display none
+  .list-textblock
+    font-size 14px
+    line-height 18px
+  .section-blog
+    height auto
+    background-repeat repeat-y
+    background-position right
+    background-size 215%
+    padding-bottom 35px
+  .blog-img-wrapper
+    margin-top 25px
+  .section-seo
+    background-image none
+  .overlay
+    width 320px
+    height 383px
+  .section-contacts
+    height auto
+    padding-top 30px
+    padding-bottom 30px
+  .contact-form
+    margin-top 52px
+  .b-link
+    display inline-block
+    margin-bottom 5px
+  .other-post-promo
+    overflow visible
+    max-height none
+  .promo-img
+    width 100%
+  .promo-text
+    width auto
+    padding 10px
+  .breadcrumbs
+    position relative
+    top 20px
+  .services-inner-list:after
+    bottom 0
+    width 100%
+  .sevices-inner-title
+    margin-right 15px
+  .services-inner-list
+    padding-top 15px
+    overflow hidden
+    max-height 50px
+    transition .4s
+  .services-inner-list.active
+    max-height none
+    overflow visible
+    transition .4s
+  .services-inner-list:before
+    content ''
+    position absolute
+    right 15px
+    top 22px
+    background-image url('../img/services-arr.png')
+    width 15px
+    height 9px
+    transition .4s
+  .services-inner-list.active:before
+    transform rotate(180deg)
+    transition .4s
+  .post-inner-category
+    padding-top 15px
+    overflow hidden
+    max-height 52px
+    transition .4s
+    cursor pointer
+  .post-inner-category.active
+    max-height none
+    overflow visible
+    transition .4s
+  .post-inner-category:before
+    content ''
+    position absolute
+    right 35px
+    top 20px
+    background-image url('../img/service-arr.png')
+    width 15px
+    height 9px
+    transition .4s
+    transform-origin center
+  .post-inner-category.active:before
+    transform rotate(180deg)
+    transition .4s
+  .tags
+    position relative
+    margin-top 0
+    overflow hidden
+    height 60px
+    cursor pointer
+  .tags.active
+    height auto
+    border-bottom 2px solid #000
+    padding-bottom 10px
+    .tags-title
+      background-color #dedede
+      transition .4s
+      color #000
+  .tags:before
+    content ''
+    position absolute
+    right 20px
+    top 25px
+    background-image url('../img/service-arr.png')
+    width 15px
+    height 9px
+    transition .4s
+    z-index 2
+  .tags.active:before
+    transform rotate(180deg)
+    transition .4s
+    background-image url('../img/services-arr.png')
+  .tags-title
+    padding 20px
+    background-color #000
+    color #fff
+    position relative
+    transition .4s
+  .tag-link
+    margin 4px
+    margin-top 8px
+  .left-img
+    width 100%
+  .right-img
+    width 100%
+  .social-menu
+    background-color #000
+    position absolute
+    right 2px
+    z-index 5
+    top 58px
+    display none
+  .social-menu li
+    display block
+    text-align center
+    padding 12px
+  .social-hidden-title
+    display block
+  .social-menu.active
+    display block
+  .hidden-menu
+    &:after
+      display none
+    &:before
+      content ''
+      display inline-block
+      background-image url('../img/hidden-menu.png')
+      width 24px
+      height 18px
+      margin-right 10px
+      transition .4s
+    &.active
+      transition .4s
+      color _hover-color
+      &:before
+        background-image url('../img/hidden-menu-a.png')
+        transition .4s
+  .youtube-player img
+    width 100%
+  .why-us-list-item
+    font-size 15px
+
+
+.video
+  position relative
+
+.play
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%,-50%)
+  width 97px
+  height 97px
+  transition .4s
+  background-image url('../img/video-btn.png')
+  cursor pointer
+  &:hover
+    background-image url('../img/video-btn-a.png')
+    transition .4s
+
+
+.map
+  width 100%
+  height 500px
+
+@media (max-width: 992px)
+  .map
+    width 975px
+    height 450px
+
+
+@media (max-width: 320px)
+  .map
+    width 320px
+    height 500px

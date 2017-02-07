@@ -22,15 +22,35 @@ svg(xmlns='http://www.w3.org/2000/svg', style='display: none;')
 section.section-header
   .container
     .row
-      .col-md-2
-        .logo
+      .col-lg-2.col-md-2
+        a(href="javascript:void(0)").logo
           img(src="img/logo.png", alt="")
-      .col-md-7
+      .col-lg-7.col-md-3.main-outer
+        .hidden-menu Меню
         ul.main-menu
           li
             a(href="javascript:void(0)").main-menu--item Кто мы
-          li
+          li.js-item-outer
             a(href="javascript:void(0)").main-menu--item Услуги
+            ul.inner-header-menu.js-inner-content
+              li
+                a(href="javascript:void(0)").inner-header-menu--item Комплексное продвижение в интернете
+              li
+                a(href="javascript:void(0)").inner-header-menu--item Поисковой маркетинг (SEO-продвижение сайтов)
+              li
+                a(href="javascript:void(0)").inner-header-menu--item Продвижение в соцсетях (Социальный маркетинг)
+              li
+                a(href="javascript:void(0)").inner-header-menu--item Создание сайтов
+              li
+                a(href="javascript:void(0)").inner-header-menu--item Консалтинг и аудит
+              li
+                a(href="javascript:void(0)").inner-header-menu--item Медийная реклама
+              li
+                a(href="javascript:void(0)").inner-header-menu--item E-mail маркетинг
+              li
+                a(href="javascript:void(0)").inner-header-menu--item Аналитика
+              li
+                a(href="javascript:void(0)").inner-header-menu--item Контекстная реклама
           li
             a(href="javascript:void(0)").main-menu--item Достижения
           li
@@ -41,7 +61,8 @@ section.section-header
             a(href="javascript:void(0)").main-menu--item FAQ
           li
             a(href="javascript:void(0)").main-menu--item Контакты
-      .col-md-2
+      .col-lg-2.col-md-5
+        .social-hidden-title Мы в соцсетях
         ul.social-menu
           li
             a(href="javascript:void(0)").social-menu--item
@@ -68,7 +89,12 @@ section.section-header
               svg.svg.svg--in
                 use(xlink:href='#svg--in')
 
-      .col-md-1
+      .col-lg-1.col-md-2.col-xs-4.btn-xs-abs
         a(href="javascript:void(0)").header-search-btn
           svg.svg.svg--search
+            use(xlink:href='#svg--search')
+        .search-block
+          input(type="text", placeholder='Поиск...').main-search
+          input(type="submit", value="Найти").main-search--submit
+          svg.svg.svg--search.search-block-svg
             use(xlink:href='#svg--search')

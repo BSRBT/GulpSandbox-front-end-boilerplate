@@ -1,20 +1,79 @@
+_main-btn = #36a6ff
+_hover-color = #fdb721
+
 .section-header
   height 70px
   width 100%
   background-color #000
+  position relative
 
 .logo
   margin 0 auto
   margin-top 11px
+  display block
 
-.main-menu li
+.social-hidden-title
+  display none
+  color #fff
+  float right
+  margin-top 30px
+  width 154px
+  color #bcbcbc
+  font-size 18px
+  cursor pointer
+  &:after
+    content ''
+    width 18px
+    height 18px
+    background-image url('/img/social-hidden.png')
+    margin-left 12px
+    display inline-block
+    vertical-align middle
+
+.hidden-menu
+  display none
+  visibility hidden
+  opacity 0
+  color #fff
+  font-size 18px
+  padding-top 34px
+  padding-left 20px
+  padding-bottom 8px
+  cursor pointer
+  &:after
+    content ''
+    display inline-block
+    background-image url('../img/hidden-menu.png')
+    width 24px
+    height 18px
+    margin-left 10px
+    transition .4s
+  &.active
+    transition .4s
+    color _hover-color
+    &:after
+      background-image url('../img/hidden-menu-a.png')
+      transition .4s
+
+.main-menu > li
   display inline-block
   padding 26px 11px
+  position relative
+  &:hover .main-menu--item
+    transition .4s
+    color _hover-color
+  &:hover > .inner-header-menu
+    height auto
+    transition .4s
+    opacity 1
+    padding 40px 15px 15px
+    visibility visible
 
 .main-menu--item
   color #fff
   font-size 18px
   text-decoration none
+  transition .4s
 
 .social-menu li
   display inline-block
@@ -26,6 +85,10 @@
 
 .svg
   fill #bcbcbc
+  transition .4s
+  &:hover
+    fill #fff
+    transition .4s
 
 .svg--vk
   width 20px
@@ -63,3 +126,93 @@
   line-height 80px
   vertical-align middle
   text-align center
+  border 1px solid transparent
+  transition .4s
+  &:hover
+    border-color _hover-color
+    transition .4s
+  &:hover .svg--search
+    fill _hover-color
+
+
+
+.inner-header-menu
+  opacity 0
+  background-color #000
+  position absolute
+  left 50%
+  transform translate(-50%,0)
+  padding 0
+  transition .4s
+  visibility hidden
+
+
+
+.inner-header-menu--item
+  display block
+  color #fff
+  text-decoration none
+  transition .3s
+  width 190px
+  font-family 'IstokWeb-Bold'
+  font-size 14px
+  margin-bottom 15px
+  line-height 18px
+  &:hover
+    transition .3s
+    text-decoration underline
+    color #36a6ff
+
+
+.search-block
+  position absolute
+  background-color #000
+  right 15px
+  height 70px
+  z-index 1
+  width 1000px
+  visibility hidden
+  opacity 0
+  top -100%
+  transition .5s
+  &.visible
+    transition .5s
+    top 0
+    opacity 1
+    visibility visible
+
+.main-search
+  background-color #222222
+  border none
+  box-shadow none
+  padding-left 15px
+  font-size 18px
+  color #fff
+  width 1000px
+  position absolute
+  top 50%
+  transform translate(0,-50%)
+  height 45px
+  &:focus
+    outline none
+
+.main-search--submit
+  position absolute
+  top 50%
+  transform translate(0,-50%)
+  height 45px
+  right 55px
+  background-color transparent
+  border none
+  color #fff
+  text-decoration underline
+  cursor pointer
+  &:focus
+    outline none
+
+.search-block-svg
+  position absolute
+  right 26px
+  top 50%
+  transform translate(0,-50%)
+  fill _hover-color
