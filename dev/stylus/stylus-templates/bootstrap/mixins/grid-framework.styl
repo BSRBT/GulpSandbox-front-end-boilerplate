@@ -14,7 +14,7 @@ make-grid-columns()
   // Common styles for all sizes of grid columns, widths 1-12
   for $index in 1..$grid-columns
     .col-xs-{$index}, .col-sm-{$index}, .col-md-{$index}, .col-lg-{$index}
-      @extends $col
+      @extend $col
 
 float-grid-columns($class)
   $col-float-{$class}
@@ -22,7 +22,7 @@ float-grid-columns($class)
 
   for $index in 1..$grid-columns
     .col-{$class}-{$index}
-      @extends $col-float-{$class}
+      @extend $col-float-{$class}
 
 calc-grid-column($index, $class, $type)
   if $type == width and $index > 0

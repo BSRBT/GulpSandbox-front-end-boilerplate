@@ -22,10 +22,10 @@ svg(xmlns='http://www.w3.org/2000/svg', style='display: none;')
 section.section-header
   .container
     .row
-      .col-lg-2.col-md-2
+      .col-lg-2.col-md-2.col-sm-2
         a(href="javascript:void(0)").logo
           img(src="img/logo.png", alt="")
-      .col-lg-7.col-md-3.main-outer
+      .col-lg-7.col-md-3.col-sm-3.main-outer
         .hidden-menu Меню
         ul.main-menu
           li
@@ -61,7 +61,7 @@ section.section-header
             a(href="javascript:void(0)").main-menu--item FAQ
           li
             a(href="javascript:void(0)").main-menu--item Контакты
-      .col-lg-2.col-md-5
+      .col-lg-2.col-md-5.col-sm-5
         .social-hidden-title Мы в соцсетях
         ul.social-menu
           li
@@ -89,12 +89,7 @@ section.section-header
               svg.svg.svg--in
                 use(xlink:href='#svg--in')
 
-      .col-lg-1.col-md-2.col-xs-4.btn-xs-abs
-        a(href="javascript:void(0)").header-search-btn
-          svg.svg.svg--search
-            use(xlink:href='#svg--search')
-        .search-block
-          input(type="text", placeholder='Поиск...').main-search
-          input(type="submit", value="Найти").main-search--submit
-          svg.svg.svg--search.search-block-svg
-            use(xlink:href='#svg--search')
+      .col-lg-1.col-md-2.col-xs-4.col-sm-2.btn-xs-abs
+        .language-switcher
+          a(href="javascript:void(0)").language-switcher-item.active En
+          a(href="javascript:void(0)").language-switcher-item Ru
