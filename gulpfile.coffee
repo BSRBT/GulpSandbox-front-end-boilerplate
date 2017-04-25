@@ -2,7 +2,6 @@ gulp = require 'gulp'
 pug = require 'gulp-pug'
 connect = require 'gulp-connect'
 stylus = require 'gulp-stylus'
-coffee = require 'gulp-coffee'
 uglify = require 'gulp-uglify'
 clean = require 'gulp-clean'
 rjs = require 'gulp-requirejs'
@@ -43,23 +42,23 @@ gulp.task 'connect', ->
 		livereload: on
 		root: './dist'
 
-gulp.task 'coffee', ->
-	gulp.src 'dev/coffee/*.coffee'
-	.pipe do plumber
-	.pipe do coffee
-	.pipe gulp.dest 'js'
+# gulp.task 'coffee', ->
+# 	gulp.src 'dev/coffee/*.coffee'
+# 	.pipe do plumber
+# 	.pipe do coffee
+# 	.pipe gulp.dest 'js'
 
 
-gulp.task 'build', ['coffee'], ->
-	rjs
-	  baseUrl: 'js'
-	  name: '../bower_components/almond/almond'
-	  include: ['main']
-	  insertRequire: ['main']
-	  out: 'all.js'
-	  wrap: on
-	.pipe do uglify
-	.pipe gulp.dest 'dist/js'
+# gulp.task 'build', ['coffee'], ->
+# 	rjs
+# 	  baseUrl: 'js'
+# 	  name: '../bower_components/almond/almond'
+# 	  include: ['main']
+# 	  insertRequire: ['main']
+# 	  out: 'all.js'
+# 	  wrap: on
+# 	.pipe do uglify
+# 	.pipe gulp.dest 'dist/js'
 
 
 	gulp.src 'js/', read: no
@@ -69,8 +68,8 @@ gulp.task 'build', ['coffee'], ->
 gulp.task 'watch', ->
 	gulp.watch 'dev/pug/**/*.pug', ['compileCurrentTheme']
 	gulp.watch 'dev/stylus/**/*.styl', ['compileCurrentStyle']
-	gulp.watch 'dev/coffee/*.coffee', ['build']
+	# gulp.watch 'dev/coffee/*.coffee', ['build']
 
 
 
-gulp.task 'default', ['compileCurrentTheme', 'compileCurrentStyle', 'build', 'connect', 'watch']
+gulp.task 'default', ['compileCurrentTheme', 'compileCurrentStyle', 'connect', 'watch']
