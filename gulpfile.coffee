@@ -21,7 +21,6 @@ gulp.task 'compileCurrentStyle', ->
   	.pipe stylus set: ['compress']
   	.pipe autoprefixer set: ['last 2 versions']
   	.pipe do sourcemaps.write
-    # .pipe do sourcemaps.write('.')
   	.pipe gulp.dest 'dist/css'
   	.pipe do connect.reload
 
@@ -42,25 +41,6 @@ gulp.task 'connect', ->
 		livereload: on
 		root: './dist'
 
-# gulp.task 'coffee', ->
-# 	gulp.src 'dev/coffee/*.coffee'
-# 	.pipe do plumber
-# 	.pipe do coffee
-# 	.pipe gulp.dest 'js'
-
-
-# gulp.task 'build', ['coffee'], ->
-# 	rjs
-# 	  baseUrl: 'js'
-# 	  name: '../bower_components/almond/almond'
-# 	  include: ['main']
-# 	  insertRequire: ['main']
-# 	  out: 'all.js'
-# 	  wrap: on
-# 	.pipe do uglify
-# 	.pipe gulp.dest 'dist/js'
-
-
 	gulp.src 'js/', read: no
 		.pipe do clean
 
@@ -68,7 +48,6 @@ gulp.task 'connect', ->
 gulp.task 'watch', ->
 	gulp.watch 'dev/pug/**/*.pug', ['compileCurrentTheme']
 	gulp.watch 'dev/stylus/**/*.styl', ['compileCurrentStyle']
-	# gulp.watch 'dev/coffee/*.coffee', ['build']
 
 
 

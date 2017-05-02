@@ -1,0 +1,6 @@
+
+_between(t, f, tW, fW)
+  slope = (t - f) / (tW - fW)
+  base = f - slope * fW
+  slope2 = 100vw * slope
+  "calc(%s + %s)" % (base slope2)

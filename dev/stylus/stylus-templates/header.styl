@@ -1,0 +1,96 @@
+.page-header
+  &--fixed
+    position fixed
+    top 0
+    left 0
+    right 0
+    height 97px
+    display flex
+    justify-content flex-end
+    padding 0 43px
+
+
+
+.logo
+  position absolute
+  left 60px
+  top 15px
+  &__text
+    position absolute
+    width 100%
+    font-size 27px
+    font-weight 900
+    letter-spacing -1.3px
+    color #fff
+    top 43%
+    opacity 0
+    &--left
+    &--right
+      position absolute
+      display inline-block
+    &--left
+      left 8px
+      transform translate(11px)
+    &--right
+      right 14px
+      transform translate(-11px)
+  &__img
+    position relative
+    width 245px
+    height 160px
+    img
+      position absolute
+      left 50%
+      top 50%
+      display block
+      max-width 100%
+      height auto
+  &__coffee
+    width 13.5%
+    transform translate(-54%,-50%) scale(0.7)
+    opacity 0
+  &__coffee-ring
+    width 24%
+    transform translate(-56%,-50%) rotate(90deg)
+    opacity 0
+  &__coffee-lines
+    width 54%
+    transform translate(-52%,-50%) rotate(-90deg)
+    opacity 0
+.active.logo
+  .logo
+    &__text
+      opacity 1
+      transition .6s
+      transition-delay 1.5s
+      &--left
+      &--right
+        transition-delay .5s
+        transition 1s
+        transform translate(0) translateZ(0)
+    &__coffee
+      transition 1s
+      transform translate(-54%,-50%) scale(1) translateZ(0)
+      opacity 1
+    &__coffee-ring
+      transition .6s
+      transform translate(-56%,-50%) translateZ(0)
+      opacity 1
+      transition-delay .5s
+    &__coffee-lines
+      transition .8s
+      transition-delay 1s
+      transform translate(-52%,-50%) translateZ(0)
+      opacity 1
+
+
+.header
+  &-phone
+    &--link
+      font-size 26px
+      letter-spacing -1.3px
+      font-weight 900
+      color #fff
+      text-decoration none
+      span
+        font-weight 300
