@@ -1,85 +1,84 @@
 rupture.scale = 0 480px 720px 840px 1040px 1280px 1440px 1600px
+// @import 'jeet'
 // rupture.scale-names = 'xs' 's' 'm' 'l' 'xl'
 
-:root
-  --rowNum 4
-  --colNum 5
-  --gridHeight 100vh
-  --wrapperH auto
-
-
-+from-width(1)
-  :root
-    --colNum 4
-
-+from-width(3)
-  :root
-    --colNum 8
-+from-width(4)
-  :root
-    --colNum 10
-+from-width(5)
-  :root
-    --colNum 12
-+from-width(7)
-  :root
-    --colNum 16
-
-
-
-.wrapper
-  height var(--wrapperH)
-
-
-.wrapper
-  display grid
-  grid-template-rows repeat(var(--rowNum), var(--gridHeight))
-  grid-template-columns repeat(var(--colNum), auto)
-
-
-.grid-item
-  grid-column-start auto
-  grid-row-start auto
-  margin 5px
-  background-color #000
-  color #fff
-  text-align center
-  +from-width(1)
-    margin 12px
-  +from-width(3)
-    margin 16px
-  +from-width(4)
-    margin 16px
-  +from-width(5)
-    margin 16px
-  +from-width(7)
-    margin 20px
-
-
-
-// .rupture-container
-//   display flex
-//   margin 0 auto
+// :root
+//   --rowNum 4
+//   --colNum 5
+//   --gridHeight 100vh
+//   --wrapperH auto
+//
+//
+// +from-width(1)
+//   :root
+//     --colNum 4
+//
+// +from-width(3)
+//   :root
+//     --colNum 8
+// +from-width(4)
+//   :root
+//     --colNum 10
+// +from-width(5)
+//   :root
+//     --colNum 12
+// +from-width(7)
+//   :root
+//     --colNum 16
+//
+//
+//
+// .wrapper
+//   height var(--wrapperH)
+//
+//
+// .wrapper
+//   display grid
+//   grid-template-rows repeat(var(--rowNum), var(--gridHeight))
+//   grid-template-columns repeat(var(--colNum), auto)
+//
+//
+// .grid-item
+//   grid-column-start auto
+//   grid-row-start auto
+//   margin 5px
+//   background-color #000
+//   color #fff
+//   text-align center
 //   +from-width(1)
-//     width 100%
-//   +from-width(2)
-//     width 480px
+//     margin 12px
 //   +from-width(3)
-//     width 720px
+//     margin 16px
 //   +from-width(4)
-//     width 840px
+//     margin 16px
 //   +from-width(5)
-//     width 1040px
-//   +from-width(6)
-//     width 1280px
+//     margin 16px
 //   +from-width(7)
-//     width 1440px
-//   +from-width(8)
-//     width 1600px
+//     margin 20px
+
+
+
+.rupture-container
+  margin 0 auto
+  +from-width(1)
+    width 100%
+  +from-width(2)
+    width 480px
+  +from-width(3)
+    width 720px
+  +from-width(4)
+    width 840px
+  +from-width(5)
+    width 1040px
+  +from-width(6)
+    width 1280px
+  +from-width(7)
+    width 1440px
+  +from-width(8)
+    width 1600px
 //
 // .rupture-col
 //   background-color #bada55
-//   flex 1
 //   +from-width(1)
 //     width percentage(.25)
 //     padding 0 12px
