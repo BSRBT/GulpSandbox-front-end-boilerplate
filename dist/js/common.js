@@ -41,7 +41,3 @@ if(ieDetector.ieVersion == 10 || ieDetector.ieVersion == 11) {
     $(window).on('load resize', ieFlexboxFix);
   })();
 }
-
-setTimeout(function() {
-  $('.logo').addClass('active')
-}, 1000);

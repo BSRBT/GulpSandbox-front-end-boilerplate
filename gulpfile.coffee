@@ -10,15 +10,15 @@ autoprefixer = require 'gulp-autoprefixer'
 sourcemaps = require 'gulp-sourcemaps'
 prettify = require 'gulp-prettify'
 changed = require 'gulp-changed'
-
-
+rupture = require 'rupture'
+nib = require 'nib'
 
 gulp.task 'compileCurrentStyle', ->
  	return gulp.src 'dev/stylus/main.styl'
    .pipe changed 'dist/css'
   	.pipe do sourcemaps.init
   	.pipe do plumber
-  	.pipe stylus set: ['compress']
+  	.pipe stylus use: rupture nib set: ['compress']
   	.pipe autoprefixer set: ['last 2 versions']
   	.pipe do sourcemaps.write
   	.pipe gulp.dest 'dist/css'
