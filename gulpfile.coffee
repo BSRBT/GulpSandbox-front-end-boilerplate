@@ -27,7 +27,7 @@ gulp.task 'compileCurrentStyle', ->
 
 
 gulp.task 'compileCurrentTheme', ->
-  return gulp.src 'dev/pug/*.pug'
+  return gulp.src 'dev/pug/pages/*.pug'
    .pipe changed 'dist'
    .pipe do plumber
    .pipe do pug
