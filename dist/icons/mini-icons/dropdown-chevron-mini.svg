@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>dropdown-chevron-mini</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ready-for-exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dropdown-chevron-mini">
+            <g>
+                <rect id="Rectangle-13" fill="#808080" opacity="0" transform="translate(8.000000, 8.000000) rotate(90.000000) translate(-8.000000, -8.000000) " x="0" y="0" width="16" height="16"></rect>
+                <polygon id="Rectangle" fill="#000000" fill-rule="nonzero" transform="translate(8.006246, 8.359654) rotate(90.000000) translate(-8.006246, -8.359654) " points="5.07426567 11.3951878 6.48847923 12.8094013 10.9382267 8.35965386 6.48847923 3.90990639 5.07426567 5.32411995 8.10979957 8.35965386"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

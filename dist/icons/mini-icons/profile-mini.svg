@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>profile-mini</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ready-for-exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="profile-mini">
+            <rect id="Rectangle" fill="#808080" opacity="0" x="0" y="0" width="16" height="16"></rect>
+            <path d="M2,12 C2,12 2.57078447,9.00297038 8,9.00297038 C13.4292155,9.00297038 14,12 14,12 L14,14 L2,14 L2,12 Z M8,8 C6.34314575,8 5,6.65685425 5,5 C5,3.34314575 6.34314575,2 8,2 C9.65685425,2 11,3.34314575 11,5 C11,6.65685425 9.65685425,8 8,8 Z" id="Combined-Shape" fill="#000000"></path>
+        </g>
+    </g>
+</svg>

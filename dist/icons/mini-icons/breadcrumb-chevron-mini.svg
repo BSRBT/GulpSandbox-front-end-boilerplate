@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>breadcrumb-chevron-mini</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ready-for-exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="breadcrumb-chevron-mini">
+            <g id="Rectangle">
+                <rect fill="#808080" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                <polygon fill="#000000" fill-rule="nonzero" points="5.42767334 11.0292877 6.8418869 12.4435013 11.2916344 7.99375382 6.8418869 3.54400635 5.42767334 4.95821991 8.46320725 7.99375382"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

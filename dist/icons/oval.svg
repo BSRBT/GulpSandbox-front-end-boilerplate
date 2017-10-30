@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.32">
+        <g id="03_04_Elements_Lists" transform="translate(-648.000000, -1696.000000)" fill="#000000">
+            <g id="Unordered-lists" transform="translate(499.000000, 838.000000)">
+                <g id="Bullet-points" transform="translate(0.000000, 666.000000)">
+                    <g id="Primary-level" transform="translate(0.000000, 96.000000)">
+                        <g id="Visual" transform="translate(1.000000, 0.000000)">
+                            <circle id="Oval" cx="172" cy="120" r="24"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

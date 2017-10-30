@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>share-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ready-for-exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="share-icon">
+            <rect id="Rectangle-4-Copy-2" fill="#808080" opacity="0" x="0" y="0" width="32" height="32"></rect>
+            <path d="M24.6298712,14.6522208 L19.5,10.9251943 L19.5,13.5 L17.5,13.5 C14.0311603,13.5 11.3547041,15.0451821 9.28806538,17.6997362 C11.9116682,16.9423205 14.6733277,16.5 17.5,16.5 L19.5,16.5 L19.5,18.8066781 L24.6298712,14.6522208 Z M5,21.5 C5,21.5 8,11.5 17.5,11.5 L17.5,7 L27.9140213,14.5661418 L17.5,23 L17.5,18.5 C10.5,18.5 5,21.5 5,21.5 Z" id="Picto_Share-Copy-3" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>back-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ready-for-exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="back-icon">
+            <g id="back-arrow-icon">
+                <rect id="Rectangle-10" fill="#808080" opacity="0" x="0" y="0" width="32" height="32"></rect>
+                <polygon id="Combined-Shape" fill="#000000" points="10.5095369 15 24 15 24 17 10.3188902 17 15.7864482 22.4675579 14.3722346 23.8817715 6.58578644 16.0953233 14.3882166 8.29289322 15.8024301 9.70710678"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

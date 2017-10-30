@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>heart-mini</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ready-for-exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="heart-mini" transform="translate(8.000000, 8.000000) scale(-1, 1) translate(-8.000000, -8.000000) " fill="#000000">
+            <g id="heart-icon-mini">
+                <path d="M7.38200093,4.02296775 L7.99824801,4.64395827 L8.61799907,4.0194368 C9.96526469,2.66180087 12.1481157,2.65990818 13.4932988,4.01544559 C14.8357448,5.36822476 14.8367087,7.57053031 13.4893381,8.928272 L8.69503314,13.7396537 C8.29855486,14.1375442 7.67144423,14.1323094 7.28223878,13.7401081 L2.51066187,8.93180295 C1.16329129,7.57406126 1.1642552,5.37175572 2.50670116,4.01897655 C3.85188429,2.66343914 6.03473531,2.66533183 7.38200093,4.02296775 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

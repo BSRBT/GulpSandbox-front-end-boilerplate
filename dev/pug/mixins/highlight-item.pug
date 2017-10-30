@@ -1,0 +1,14 @@
+mixin highlight-item(backgroundUrl, meta, category, title, additionnal, cta, shout)
+    .ds-highlight(class!=attributes.class)
+        a.ds-highlight__link(href="#")
+        .ds-highlight__image(style="background-image: url("+backgroundUrl+");")
+        .ds-highlight__shadow
+        .ds-highlight__subinfo
+            .ds-highlight__meta !{meta}
+            .ds-highlight__category=category
+        h1.ds-text-shadow=title
+        .ds-highlight__additionnal !{additionnal}
+        .ds-highlight__buttons-wrapper
+            .ds-highlight__buttons
+                .ds-highlight__cta !{cta}
+                .ds-highlight__shout !{shout}

@@ -1,0 +1,112 @@
+mixin submenu-item(title, mode)
+    .ds-g-submenu__item(id=title)
+        .ds-g-submenu__first-col
+            .ds-g-submenu-container
+                .ds-g-submenu-wrapper
+
+                    h4.ds-g-submenu__title=title
+                    //p.ds-g-submenu__title-description Discover all our products and services.
+
+
+                    if mode != 3
+                        // Here you can put as many item as you want but from the same type
+                        ul.ds-g-sub-list
+                            // TYPE ONE
+                            if mode == 1
+                                a(href="#")
+                                    li.ds-g-sub-list__item
+                                        .ds-g-sub-list__title Design
+                                        .ds-g-sub-list__descr
+                                a(href="#")
+                                    li.ds-g-sub-list__item
+                                        .ds-g-sub-list__title Manufacturing
+                                        .ds-g-sub-list__descr
+                                a(href="#")
+                                    li.ds-g-sub-list__item
+                                        .ds-g-sub-list__title Marketing
+                                        .ds-g-sub-list__descr
+                                a(href="#")
+                                    li.ds-g-sub-list__item
+                                        .ds-g-sub-list__title Science
+                                        .ds-g-sub-list__descr
+
+                            if mode == 2
+                                // TYPE TWO
+                                +submenu-list-item("BIOVIA", "Virtual biosphere and materials")
+                                +submenu-list-item("CATIA", "Shape the world we live in")
+                                +submenu-list-item("DELMIA", "Global industrial Operations")
+                                +submenu-list-item("ENOVIA", "Collaborative innovation")
+                                +submenu-list-item("EXALEAD", "Data in Business")
+                                +submenu-list-item("GEOVIA", "Virtual planet")
+                                +submenu-list-item("NETVIBES", "Dashboard Intelligence")
+                                +submenu-list-item("SIMULIA", "Simulation for Product, nature & life")
+                                +submenu-list-item("SOLIDWORKS", "Inspiring Innovation")
+                                +submenu-list-item("3DVIA", "The Consumer Experience Brand")
+                                +submenu-list-item("3DExcite", "Virtual biosphere and materials")
+
+
+                    else
+                        ul.ds-g-sub-list
+                            a(href="#")
+                                li.ds-g-sub-list__item
+                                    .ds-g-sub-list__title Entry #1
+                                    .ds-g-sub-list__descr
+                            a(href="#")
+                                li.ds-g-sub-list__item
+                                    .ds-g-sub-list__title Entry #2
+                                    .ds-g-sub-list__descr
+
+        .ds-g-submenu__last-col
+            .ds-g-submenu-container
+                .ds-g-submenu-wrapper
+                    .ds-g-submenu__related
+                        h4.ds-g-submenu__title Discover also
+
+                        // You can put as many item as you want.
+                        ul.ds-g-sub-list.ds-g-sub-list--related
+                            li.ds-g-sub-list__item
+                                a(href="#")
+                                    .ds-g-sub-list__title Resource Center
+                                    .ds-g-sub-list__descr Discover articles, video, customer, stories about industries
+                            li.ds-g-sub-list__item
+                                a(href="#")
+                                    .ds-g-sub-list__title Events
+                                    .ds-g-sub-list__descr Find all dates of industries events
+                            li.ds-g-sub-list__item
+                                a(href="#")
+                                    .ds-g-sub-list__title Compass Mag
+                                    .ds-g-sub-list__descr Read a lot of articles about your industry
+                            li.ds-g-sub-list__item
+                                a(href="#")
+                                    .ds-g-sub-list__title Customer stories
+                                    .ds-g-sub-list__descr Explore how Dassault Systèmes supports customers
+
+
+                    .ds-g-submenu__discover
+                        //Here you can put either one customer story like the one below...
+                        if mode == 1
+                            .ds-g-submenu__card(style="")
+                                a(href="#")
+                                    //(image must be 255x136)
+                                    img(src="../../aigis_assets/images/avion.png" alt="bla" title="bla")
+                                    h5.ds-g-submenu__card__title Customer Story
+                                    p Solar Impulse
+                        else if mode == 2
+                            //... or two product images (image must be 327x72)
+                            .ds-g-submenu__products
+                                a(href="#")
+                                    .ds-g-submenu__products__image(style="background-image: url(../../aigis_assets/images/3DExperience.png)")
+                                a(href="#")
+                                    .ds-g-submenu__products__image(style="background-image: url(../../aigis_assets/images/Draftsight.png)")
+
+
+
+
+
+mixin submenu-list-item(name, descr)
+    a(href="#")
+        li.ds-g-sub-list__item.ds-g-sub-list__item--with-logo
+            a(href="#")
+                .ds-g-sub-list__title
+                    img(src="../../aigis_assets/images/logos/"+name+".svg" title=name alt=name)
+                .ds-g-sub-list__descr=descr

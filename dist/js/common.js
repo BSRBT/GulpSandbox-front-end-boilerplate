@@ -41,3 +41,28 @@ if(ieDetector.ieVersion == 10 || ieDetector.ieVersion == 11) {
     $(window).on('load resize', ieFlexboxFix);
   })();
 }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+var carouselPhoto = new Swiper ('#demo1 .swiper-container--single', {
+  pagination: '.swiper-pagination',
+  nextButton: '#demo1 .swiper-button-next',
+  prevButton: '#demo1 .swiper-button-prev',
+  paginationClickable: true,
+  slidesPerView: 2,
+  spaceBetween: 40,
+  breakpoints: {
+    720: {
+        slidesPerView: 1,
+        spaceBetween: 16,
+    },
+    1041: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    },
+    1441: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    }
+  },
+});

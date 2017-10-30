@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>accordeon-plus-mini</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ready-for-exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="accordeon-plus-mini" transform="translate(8.000000, 8.000000) scale(-1, 1) translate(-8.000000, -8.000000) ">
+            <g id="accordeon-plus-icon-mini" transform="translate(8.000000, 8.000000) scale(1, -1) translate(-8.000000, -8.000000) ">
+                <rect id="Rectangle-13" fill="#808080" opacity="0" transform="translate(8.000000, 8.000000) rotate(90.000000) translate(-8.000000, -8.000000) " x="0" y="0" width="16" height="16"></rect>
+                <polygon id="Combined-Shape" fill="#000000" points="9 9 12 9 12 7 9 7 9 4 7 4 7 7 4 7 4 9 7 9 7 12 9 12"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

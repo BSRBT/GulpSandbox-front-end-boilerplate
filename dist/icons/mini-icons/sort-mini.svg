@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>sort-mini</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ready-for-exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sort-mini">
+            <g id="sort-icon-mini">
+                <rect id="Rectangle" fill="#808080" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                <path d="M6.03033009,8.96966991 L8,10.9393398 L9.96966991,8.96966991 L11.0303301,10.0303301 L8,13.0606602 L4.96966991,10.0303301 L6.03033009,8.96966991 Z M9.96966991,7.03033009 L8,5.06066017 L6.03033009,7.03033009 L4.96966991,5.96966991 L8,2.93933983 L11.0303301,5.96966991 L9.96966991,7.03033009 Z" id="Combined-Shape" fill="#000000" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
